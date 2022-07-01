@@ -34,7 +34,7 @@ To create an account, instantiate a Create request:
 import "github.com/gigena-git/form3-interview/pkg/create"
 
 func main() {
-    attributes := create.AccountAttributes{
+	attributes := create.AccountAttributes{
 		Country:                 "GB",
 		BaseCurrency:            "GBP",
 		BankID:                  "400300",
@@ -47,12 +47,12 @@ func main() {
 		AccountMatchingOptOut:   false,
 		SecondaryIdentification: "SSQRGELQGT",
 	}
-    create_request := accounts.AccountDataRequest {
-        Type:           "accounts",
+	create_request := accounts.AccountDataRequest {
+    	Type:           "accounts",
 		ID:             "ad27e265-9605-4b4b-a0e5-3003ea9cc4dc",
 		OrganisationID: "eb0bd6f5-c3f5-44b2-b677-acd23cdde73c",
-        Version:        int64(0),
-    }
+    	Version:        int64(0),
+	}
 ```
 and then call the Create function, with said request.
 ```go
