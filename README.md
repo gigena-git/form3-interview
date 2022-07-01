@@ -52,7 +52,7 @@ func main() {
 		ID:             "ad27e265-9605-4b4b-a0e5-3003ea9cc4dc",
 		OrganisationID: "eb0bd6f5-c3f5-44b2-b677-acd23cdde73c",
     	Version:        int64(0),
-	}
+}
 ```
 and then call the Create function, with said request.
 ```go
